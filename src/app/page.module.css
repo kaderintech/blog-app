@@ -1,0 +1,50 @@
+
+/* Mobile 
+@media (max-width: 700px) {
+  
+}
+*/
+/* Tablet and Smaller Desktop 
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+*/
+
+/* styles.css */ 
+.background {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width:1536px) {
+  .wrapper {
+    max-width: 1366px;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .wrapper {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width:768px) {
+  .wrapper {
+    max-width: 6406px;
+  }
+}
+@media screen and (max-width:640px) {
+  .wrapper {
+    max-width: 475px;
+  }
+}
