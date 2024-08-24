@@ -1,0 +1,46 @@
+.topDest {
+    margin-top: 4rem; 
+}
+
+.topDest h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.topDest p {
+    font-size: 16px;
+    padding-top: 5px;
+    margin: 0;
+    /* Varsayılan kenar boşluklarını kaldırır */
+}
+
+.views {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0; 
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+}
+
+.destContainer {
+    position: relative;
+    flex: 1;
+    margin: 0;
+    /* Varsayılan kenar boşluklarını kaldırır */
+}
+
+.imgContainer {
+    position: relative; 
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}

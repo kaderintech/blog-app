@@ -1,0 +1,32 @@
+.category-list {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 120px;
+}
+
+.category-item {
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+ 
+
+.category-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #121416;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.category-item:hover::after,
+.category-item.active::after {
+    width: 100%;
+    /* Çizgi genişliğinin tamamlanması */
+}

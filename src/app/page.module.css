@@ -13,38 +13,26 @@
 */
 
 /* styles.css */ 
-.background {
-  height: 90vh;
+
+
+.posts { 
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+.posts>div {
+  flex: 1 1 calc(33.333% - 20px);
+}
+.loadBtn {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width:1536px) {
-  .wrapper {
-    max-width: 1366px;
-  }
-}
-
-@media screen and (max-width:1280px) {
-  .wrapper {
-    max-width: 1024px;
-  }
-}
-@media screen and (max-width:1024px) {
-  .wrapper {
-    max-width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width:768px) {
-  .wrapper {
-    max-width: 6406px;
-  }
-}
-@media screen and (max-width:640px) {
-  .wrapper {
-    max-width: 475px;
-  }
+.loadBtn button {
+  background-color: #fff;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 4rem;
 }

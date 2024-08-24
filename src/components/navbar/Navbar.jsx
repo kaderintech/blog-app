@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${styles.navbar} wrapper`}>
+    <nav className={styles.navbar}>
       <div className={styles.logo}>
         <Image src="logo.svg" alt="logo" width="360" height="49" />
       </div>

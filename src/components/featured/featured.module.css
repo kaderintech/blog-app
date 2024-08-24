@@ -1,0 +1,26 @@
+.background {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.cta {
+    justify-content: center;
+    align-items: center;
+    gap: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta h1 {
+    text-transform: uppercase;
+}
+
+.btn button {
+    margin-top: 1rem;
+    font-size: 12px;
+}

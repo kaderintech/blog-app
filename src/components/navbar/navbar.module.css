@@ -8,6 +8,8 @@
     font-size: 14px;
     text-transform: uppercase;
     position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .links {
@@ -82,6 +84,10 @@
 @media (max-width: 480px) {
     .links.showMenu {
         width: 100%;
+    }
+
+    .logo {
+        display: none;
     }
 
     .hamburger {
