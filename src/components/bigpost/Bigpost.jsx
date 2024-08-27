@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Bigpost = () => {
   return (
-    <div className={styles.bigPostContainer}> 
+    <div className={`${styles.bigPostContainer} wrapper`}> 
         <img src="/BigPost.svg" alt="Big Post Image" className={styles.bigPostImage} />
         <div className={styles.slogan}>
             <button>Travel</button>

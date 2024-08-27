@@ -1,30 +1,17 @@
+"use client"
 import React, { useState } from 'react';
 import './category.css';
+import CategoryContent from '../categoryContent/CategoryContent';
+import Manga from '../manga/Manga';
 
 const Category = () => {
     const [selectedCategory, setSelectedCategory] = useState('Technology');
 
     const categories = ['Technology', 'Science', 'Health', 'Travel'];
 
-    const renderContent = () => {
-        switch (selectedCategory) {
-            case 'Technology':
-                return <p>Technology Content</p>;
-            case 'Science':
-                return <p>Science Content</p>;
-            case 'Health':
-                return <p>Health Content</p>;
-            case 'Travel':
-                return <p>Travel Content</p>;
-            default:
-                return <p>Select a category</p>;
-        }
-    };
-
     return (
         <div>
-            <div className="category-list">
-                
+            <div className="category-list wrapper">
                 {categories.map((category) => (
                     <div
                         key={category}
@@ -36,8 +23,8 @@ const Category = () => {
                 ))}
             </div>
             <div className="category-content">
-                {renderContent()}
-                
+                {/* İçeriği dinamik olarak render et */}
+                <CategoryContent />
             </div>
         </div>
     );

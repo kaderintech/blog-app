@@ -1,0 +1,15 @@
+.manga-post {
+    display: flex;
+    width: 680px;
+}
+
+.manga-reads {
+    padding: 10px;
+    border: 1px solid #ececec;
+}
+.manga-reads h5 {
+    font-size: 18px;
+}
+.manga-desc p {
+    font-size: 14px;
+}

@@ -12,22 +12,7 @@ export default function Home() {
   return (
    <div>
      <Featured/>
-     <div className={styles.posts}>
         <Post />
-        <Post />
-        <Post /> 
-
-        <Post />
-        <Post />
-        <Post /> 
-
-        <Post />
-        <Post />
-        <Post /> 
-      </div>
-      <div className={styles.loadBtn}>
-        <button>Load More</button>
-      </div>
       <Bigpost/>
       <TopDest/>
       <Category/>

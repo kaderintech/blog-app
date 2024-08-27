@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TopDest = () => {
     return (
-        <div className={styles.topDest}>
+        <div className={`${styles.topDest} wrapper`}>
             <h2>Top Destinations</h2>
             <p>Tick one more destination off of your bucket list with one of our most popular vacations in 2022</p>
             <div className={styles.views}>

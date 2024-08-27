@@ -14,25 +14,3 @@
 
 /* styles.css */ 
 
-
-.posts { 
-  display: flex; 
-  gap: 20px; 
-  flex-wrap: wrap;
-  margin-top: 4rem;
-}
-.posts>div {
-  flex: 1 1 calc(33.333% - 20px);
-}
-.loadBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.loadBtn button {
-  background-color: #fff;
-  height: 40px;
-  width: 200px;
-  cursor: pointer;
-  margin-bottom: 4rem;
-}
