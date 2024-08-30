@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 const Featured = () => {
   const data = useContext(DataContext);
+  
   if (!data || !Array.isArray(data.images)) {
     return <div>Loading...</div>; // Yükleniyor göstergesi
   }

@@ -7,16 +7,13 @@
     margin-bottom: 20px; 
 }
 
-.postContainer h2 {
-    width: 350px;
-}
 
 .infodetail {
     display: flex;
     color: #6c757d;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .infodetail h4 {
@@ -66,7 +63,6 @@
 .imageWrapper {
     position: relative;
 }
-
 .postContainer button {
     background: none;
     outline: none;
@@ -122,4 +118,7 @@
     width: 200px;
     cursor: pointer;
     margin-bottom: 4rem;
+} 
+.postImage {
+    object-fit: cover;
 }

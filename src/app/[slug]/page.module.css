@@ -1,0 +1,68 @@
+.contentContainer {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    /* Adjust spacing as needed */
+}
+.contentDetail {
+    padding-top: 50px;
+}
+.imageWrapper {
+    position: relative; 
+} 
+.onImg {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.onImgLeft {
+    display: flex;
+    position: absolute;
+    
+}
+
+.contentDesc {
+    position: absolute; 
+    text-align: left;
+    color: white; 
+    border-radius: 5px; 
+    top: 20%;
+    max-width: 800px;
+}
+
+.contentDesc h1 {
+    font-size: 48px;
+}
+.contentDesc p {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.contentDesc span {
+    font-size: 16px;
+}
+.overlay {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    max-width: 300px;
+    font-size: 11px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.contentContainer {
+    display: flex;
+}
+.blogDetail {
+    display: flex;
+}
+ .link {
+    margin-top: 100px;
+ }

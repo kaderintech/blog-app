@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useContext } from 'react';
 import styles from "./post.module.css";
 import Image from "next/image";
+import { DataContext } from "@/context/DataProvider";
 
 const Post = () => {
+    const data = useContext(DataContext);
+
     return (
-        <div className={`${styles.posts} wrapper` }>
-        {Array.from({length: 9 }).map((_, index) => (
+        <div className={`${styles.posts} wrapper`}>
+        {data.contents?.map((item, index) => (
             <div key={index} className={`${styles.postContainer} wrapper`}>
                 <div className={styles.imageWrapper}>
                     <Image
+                        className={styles.postImage}
                         width="560"
-                        height="420"
-                        src="https://picsum.photos/seed/picsum/560/420"
-                        alt="Post image"
+                        height="400"
+                        src={item.image}
+                        alt={item.image_alt}
                     />
                     <div className={styles.onImg}>
                         <div className={styles.onImgLeft}>
@@ -33,19 +37,18 @@ const Post = () => {
                         </div>
                     </div>
                 </div>
-                <h2>Integer Maecenas Eget Viverra</h2>
+                <h2>{item.title}</h2>
                 <div className={styles.infodetail}>
-                    <Image width="40" height="40" src="/author.jpg" alt="Author" />
-                    <h4>Joanna Wellick</h4>
+                    <Image width="40" height="40" src={item.author.image} alt="Author" />
+                    <h4>{item.author.name} { item.author.surname}</h4>
                     <p> — </p>
-                    <p>June 28, 2018</p>
+                    <p>{item.datePublished.split("T")[0].split("-").reverse().join("-")}</p>
                     <p>.</p>
                     <Image src="/share.svg" width="15" height="15" alt="Share icon" />
                     <p>1K shares</p>
                 </div>
                 <p className={styles.postDesc}>
-                    Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum.
-                    Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.
+                    {item.description}
                 </p>
                 <div>
                     <button>

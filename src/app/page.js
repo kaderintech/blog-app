@@ -11,8 +11,8 @@ import Category from "@/components/category/Category";
 export default function Home() {
   return (
    <div>
-     <Featured/>
-        <Post />
+      <Featured/>
+      <Post />
       <Bigpost/>
       <TopDest/>
       <Category/>
